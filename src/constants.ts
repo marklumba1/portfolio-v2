@@ -1,11 +1,10 @@
 import {
   Github,
   Linkedin,
-  Facebook,
-  Instagram,
+  Mail,
   type LucideIcon
 } from "lucide-react";
-import projJsonImage from "../src/assets/proj-json-typecode.jpg" 
+import projJsonImage from "../public/proj-json-typecode.jpg"
 
 export interface CommonEntry {
   title: string;          // Job title, degree, certification name, or project title
@@ -53,7 +52,7 @@ const profile: Profile = {
       organization: "RCG Global Services",
       summary:
         "Working on enterprise-level Adobe Experience Manager (AEM) cloud implementations. Developing reusable AEM React components, managing CQ dialogs and configurations, and collaborating with cross-functional teams in Agile methodology to deliver scalable and accessible web applications.",
-      period: "Jul 2024 – Present",
+      period: "Jul 2024 - Present",
       tags: ["Adobe Experience Manager (AEM)", "React.js", "Agile Methodologies"],
       url: "https://www.rcgglobalservices.com/"
     },
@@ -63,7 +62,7 @@ const profile: Profile = {
       organization: "Accenture",
       summary:
         "We utilize Adobe Experience Manager as the content manager for webpages where we create reusable AEM react components including CQ dialogs and configurations in collaboration with the UI/UX designers to turn their designs into functional webpages.",
-      period: "Jun 2023 – Jul 2024",
+      period: "Jun 2023 - Jul 2024",
       tags: [
         "Adobe Experience Manager (AEM)",
         "Cascading Style Sheets (CSS)",
@@ -81,13 +80,12 @@ const profile: Profile = {
       organization: "Jose B Lingad Memorial General Hospital",
       summary:
         "Developed web based applications where we utilize Vue as the JavaScript framework with the application of HTML5, CSS and Bootstrap for front end. MySQL, SQL Server and PHP are utilized for backend. Also maintained existing systems that are created using jQuery.",
-      period: "Apr 2022 – Feb 2023",
+      period: "Apr 2022 - Feb 2023",
       tags: [
-        "Computer Hardware",
-        "Computer Hardware Troubleshooting",
         "HTML5",
         "Cascading Style Sheets (CSS)",
-        "jQuery"
+        "Vue",
+        "React"
       ],
       url: "https://www.facebook.com/jblmghofficial"
     },
@@ -97,8 +95,10 @@ const profile: Profile = {
       organization: "Department of Information and Communications Technology - Philippines",
       summary:
         "For this role, I worked for the DICT ICT Academy program, which allowed IT specialists employed by the government to obtain certifications that includes Cisco's CCNA and CCNP program and Microsoft Certified Professional Certificates. I also developed a web application that was used for managing the students of the ICT Academy Program of DICT.",
-      period: "Jul 2021 – Jun 2022",
-      tags: ["Adobe Photoshop", "Computer Networking", "CCNA"],
+      period: "Jul 2021 - Jun 2022",
+      tags: [  "Cascading Style Sheets (CSS)",
+        "HTML",
+        "JavaScript",],
       url: "https://dict.gov.ph/"
     },
     {
@@ -107,14 +107,9 @@ const profile: Profile = {
       organization: "Jose B Lingad Memorial General Hospital",
       summary:
         "In this position, I was responsible for analyzing patient data, gathering information and documents and ensure that the medical records are organized, accurate and complete.",
-      period: "May 2018 – Jul 2021",
+      period: "May 2018 - Jul 2021",
       tags: [
-        "People Management",
-        "Teamwork",
         "Interpersonal Skills",
-        "Coaching",
-        "PeopleSoft",
-        "Engaging People",
         "Leadership"
       ],
       url: "https://www.facebook.com/jblmghofficial"
@@ -125,17 +120,11 @@ const profile: Profile = {
       organization: "Accenture",
       summary:
         "This was an entry level role where I was assigned to various roles including development and QA roles. Mainly I developed web based apps using various frameworks including React and Ionic.",
-      period: "May 2017 – Mar 2018",
+      period: "May 2017 - Mar 2018",
       tags: [
         "Cascading Style Sheets (CSS)",
-        "CSS Flexbox",
-        "Ionic Framework",
-        "Bootstrap",
         "HTML",
-        "Redux Tool Kit",
-        "Swift (Programming Language)",
         "React.js",
-        "REST APIs",
         "JavaScript",
         "Functional Testing"
       ],
@@ -148,21 +137,21 @@ const profile: Profile = {
       title: "Bachelor of Science in Information Technology",
       position: "Undergraduate",
       organization: "Mary the Queen College, Guagua, Pampanga",
-      period: "2014 – 2017",
+      period: "2014 - 2017",
       url: "https://www.marythequeencollege.com/"
     },
     {
       title: "Information and Computer Technology, Programming",
       position: "Technical-Vocational",
       organization: "Next Generation Technological College",
-      period: "2013 – 2014",
+      period: "2013 - 2014",
       url: "https://nextgen.edu.ph/"
     },
     {
       title: "Industrial Technology (Computer)",
       position: "Certificate Program",
       organization: "Bulacan State University",
-      period: "2011 – 2013",
+      period: "2011 - 2013",
       url: "https://www.bulsu.edu.ph/"
     }
   ],
@@ -189,36 +178,56 @@ const profile: Profile = {
   ],
 
   projects: [
-    {
-      title: "JSON Type Code Sample",
-      position: "Lead Frontend Developer",
-      summary:
-        "Built a reusable AEM component set using React and Sling Models with authoring support and custom dialogs.",
-      period: "",
-      tags: ["React", "AEM", "Sling Models", "TypeScript"],
-      url: null,
-      imageSrc: projJsonImage
-    },
-    {
-      title: "Hospital Inventory System",
-      position: "Full Stack Developer",
-      summary:
-        "Internal web application for hospital inventory and equipment tracking with QR code generation.",
-      period: "2022",
-      tags: ["Vue", "PHP", "MySQL", "Bootstrap"],
-      url: null,
-      imageSrc: "/images/hospital-inventory-system.png"
-    },
-    {
-      title: "DICT ICT Academy Portal",
-      position: "Frontend Developer",
-      summary:
-        "Managed student enrollment and certification portal with login and batch processing features.",
-      period: "2021",
-      tags: ["HTML", "CSS", "JavaScript", "Laravel"],
-      url: "https://ictacademy.dict.gov.ph",
-      imageSrc: ""
-    }
+  {
+    title: "Portfolio-v2",
+    organization: "",
+    summary: "Personal portfolio site showcasing professional experience, education, and projects. Built with React, Tailwind CSS, and deployed via Netlify.",
+    url: "https://mark-lumba.netlify.app",
+    period: "",
+    position: "",
+    imageSrc: "",
+    tags: ["React", "HTML", "CSS", "Tailwind"],
+  },
+  {
+    title: "sample-jsontypecode",
+    organization: "",
+    summary: "A frontend application consuming JSONPlaceholder API, demonstrating data fetching and display using React and Tailwind CSS.",
+    url: "https://sample-jsontypecode.netlify.app",
+    period: "",
+    position: "",
+    imageSrc: projJsonImage,
+    tags: ["React", "HTML", "CSS", "Tailwind"],
+  },
+  {
+    title: "shoreagents-demo",
+    organization: "",
+    summary: "A UI demo project created for ShoreAgents. Features responsive components styled with Tailwind CSS and structured using React.",
+    url: "https://shoreagents-demo.netlify.app",
+    period: "",
+    position: "",
+    imageSrc: "",
+    tags: ["React", "HTML", "CSS", "Tailwind"],
+  },
+  {
+    title: "dotty-app",
+    organization: "",
+    summary: "A simple movie promotional site built with React and Tailwind CSS, showcasing film details in a clean, responsive layout.",
+    url: "https://dotty-app.netlify.app",
+    period: "",
+    position: "",
+    imageSrc: "",
+    tags: ["React", "HTML", "CSS", "Tailwind"],
+  },
+  {
+    title: "Portfolio",
+    organization: "",
+    summary: "An early version of personal portfolio hosted manually on Netlify. Serves as a base structure for future iterations.",
+    url: "https://marklumba.netlify.app",
+    period: "",
+    position: "",
+    imageSrc: "",
+    tags: ["React", "HTML", "CSS", "Tailwind"],
+  }
   ],
 
   socials: [
@@ -233,14 +242,9 @@ const profile: Profile = {
       icon: Linkedin
     },
     {
-      platform: "Facebook",
-      url: "https://facebook.com/yourprofile",
-      icon: Facebook
-    },
-    {
-      platform: "Instagram",
-      url: "https://instagram.com/yourprofile",
-      icon: Instagram
+      platform: "Gmail",
+      url: "https://mail.google.com/mail/u/0/?fs=1&to=marklumba1@gmail.com&su=hi%20Mark&body=&bcc=&tf=cm",
+      icon: Mail
     }
   ]
 };
