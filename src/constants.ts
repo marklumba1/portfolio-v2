@@ -5,6 +5,7 @@ import {
   Instagram,
   type LucideIcon
 } from "lucide-react";
+import projJsonImage from "../src/assets/proj-json-typecode.jpg" 
 
 export interface CommonEntry {
   title: string;          // Job title, degree, certification name, or project title
@@ -196,7 +197,7 @@ const profile: Profile = {
       period: "",
       tags: ["React", "AEM", "Sling Models", "TypeScript"],
       url: null,
-      imageSrc: "src/assets/proj-json-typecode.jpg"
+      imageSrc: projJsonImage
     },
     {
       title: "Hospital Inventory System",
