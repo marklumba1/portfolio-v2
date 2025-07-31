@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@layer base {
+  html {
+    @apply bg-slate-900 text-slate-400 antialiased transition;
+  }
+  h1{
+    @apply text-slate-200;
+  }
+  a{
+    @apply text-slate-200 hover:text-teal-400 transition font-medium;
+  }
+}
