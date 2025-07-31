@@ -1,3 +1,5 @@
+import AnimatedName from "../animations/AnimatedName";
+
 const About = () => (
   <p>
     I like combining simple design with practical coding. I enjoy working where
@@ -12,7 +14,7 @@ const About = () => (
     >
       RCG Global Services
     </a>
-    , working extensively with Adobe Experience Manager (AEM) and React.js. I
+    , working extensively with Adobe Experience Manager (AEM) and <AnimatedName name="React.js" className="inline-block"/>. I
     build reusable AEM React components and collaborate closely with UI/UX
     designers to turn creative designs into functional, accessible web pages
     that meet business goals.

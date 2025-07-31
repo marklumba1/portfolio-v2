@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import type { CommonEntry } from "../../constants";
 import { ArrowUpRight } from "lucide-react";
+import FallingList from "../animations/FallingList";
 interface CommonEntryComp {
   commonEntry: CommonEntry;
   section: string;
@@ -35,7 +36,8 @@ const CommonEntryComp: React.FC<CommonEntryComp> = ({
       onMouseLeave={() => setCurrentTitle("")}
       className={`${opacityClass} -ml-5 px-5 py-5 rounded-xl transition-[200ms] flex flex-col lg:flex-row lg:gap-5 gap-3 group hover:cursor-pointer`}
     >
-      <div>
+   
+      <FallingList>
         {commonEntry.period && (
           <p className="text-sm uppercase tracking-wider whitespace-nowrap lg:w-40">
             {commonEntry.period}
@@ -43,12 +45,15 @@ const CommonEntryComp: React.FC<CommonEntryComp> = ({
         )}
         {commonEntry.imageSrc && (
           <img
-            className="h-auto w-50  lg:min-w-40"
+            className="h-auto max-h-[100px] object-cover w-50  lg:min-w-40"
             src={commonEntry.imageSrc}
           />
         )}
-      </div>
+      </FallingList>
       <div className="flex flex-col gap-3">
+       
+
+       
         <a
           className="group-hover:text-teal-400"
           href={commonEntry.url || ""}
@@ -66,15 +71,21 @@ const CommonEntryComp: React.FC<CommonEntryComp> = ({
           <p className="text-sm">{commonEntry.summary}</p>
         )}
         {commonEntry.tags && (
-          <div className="flex gap-2 flex-wrap">
+        
+            <FallingList className="flex gap-2 flex-wrap">
+
+         
             {commonEntry.tags?.map((tag) => (
               <p className=" px-2 py-1 border rounded-4xl text-xs text-teal-400 bg-teal-200/20">
                 {tag}
               </p>
             ))}
-          </div>
+               </FallingList>
+         
         )}
+       
       </div>
+      
     </div>
   );
 };

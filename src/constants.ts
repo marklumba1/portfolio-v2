@@ -4,11 +4,11 @@ import {
   Mail,
   type LucideIcon
 } from "lucide-react";
-import projJsonImage from "../public/proj-json-typecode.jpg"
-import pv1 from "../public/portfolio-v1.jpg"
-import pv2 from "../public/portfolio-v2.jpg"
-import shoreAgents from "../public/shore-agents.jpg"
-import dotty from "../public/dotty.jpg"
+import projJsonImage from "/proj-json-typecode.jpg"
+import pv1 from "/portfolio-v1.jpg"
+import pv2 from "/portfolio-v2.jpg"
+import shoreAgents from "/shore-agents.jpg"
+import dotty from "/dotty.jpg"
 export interface CommonEntry {
   title: string;          // Job title, degree, certification name, or project title
   position: string;       // Role or position held
@@ -54,7 +54,7 @@ const profile: Profile = {
       position: "Consultant III",
       organization: "RCG Global Services",
       summary:
-        "Working on enterprise-level Adobe Experience Manager (AEM) cloud implementations. Developing reusable AEM React components, managing CQ dialogs and configurations, and collaborating with cross-functional teams in Agile methodology to deliver scalable and accessible web applications.",
+        "Working on AEM Cloud front-end development using React. Building reusable components, managing CQ dialogs, and collaborating in Agile teams to deliver scalable, accessible web applications.",
       period: "Jul 2024 - Present",
       tags: ["Adobe Experience Manager (AEM)", "React.js", "Agile Methodologies"],
       url: "https://www.rcgglobalservices.com/"
@@ -64,15 +64,11 @@ const profile: Profile = {
       position: "Advanced App Engineering Sr Analyst",
       organization: "Accenture",
       summary:
-        "We utilize Adobe Experience Manager as the content manager for webpages where we create reusable AEM react components including CQ dialogs and configurations in collaboration with the UI/UX designers to turn their designs into functional webpages.",
+        "Developing AEM front-end solutions with React on AEM as a Cloud Service. Focused on reusable components, CQ dialog setup, and cross-team collaboration in Agile environments to deliver performant and accessible web apps.",
       period: "Jun 2023 - Jul 2024",
       tags: [
-        "Adobe Experience Manager (AEM)",
-        "Cascading Style Sheets (CSS)",
-        "Agile Methodologies",
-        "HTML5",
+        "Agile",
         "React.js",
-        "JavaScript",
         "Tailwind CSS"
       ],
       url: "https://www.accenture.com/"
@@ -189,7 +185,7 @@ const profile: Profile = {
     period: "",
     position: "",
     imageSrc: pv2,
-    tags: ["React", "HTML", "CSS", "Tailwind"],
+    tags: ["React", "HTML", "CSS", "Tailwind", "Framer Motion"],
   },
   {
     title: "sample-jsontypecode",
@@ -209,7 +205,7 @@ const profile: Profile = {
     period: "",
     position: "",
     imageSrc: shoreAgents,
-    tags: ["React", "HTML", "CSS", "Tailwind"],
+    tags: ["JavaScript", "HTML", "CSS"],
   },
   {
     title: "dotty-app",
@@ -219,7 +215,7 @@ const profile: Profile = {
     period: "",
     position: "",
     imageSrc: dotty,
-    tags: ["React", "HTML", "CSS", "Tailwind"],
+    tags: ["JavaScript", "HTML", "CSS"],
   },
   {
     title: "Portfolio",
@@ -229,7 +225,7 @@ const profile: Profile = {
     period: "",
     position: "",
     imageSrc: pv1,
-    tags: ["React", "HTML", "CSS", "Tailwind"],
+    tags: ["React", "HTML", "CSS", "Tailwind", "GSAP"],
   }
   ],
 
