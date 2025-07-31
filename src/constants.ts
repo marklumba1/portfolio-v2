@@ -5,7 +5,10 @@ import {
   type LucideIcon
 } from "lucide-react";
 import projJsonImage from "../public/proj-json-typecode.jpg"
-
+import pv1 from "../public/portfolio-v1.jpg"
+import pv2 from "../public/portfolio-v2.jpg"
+import shoreAgents from "../public/shore-agents.jpg"
+import dotty from "../public/dotty.jpg"
 export interface CommonEntry {
   title: string;          // Job title, degree, certification name, or project title
   position: string;       // Role or position held
@@ -185,7 +188,7 @@ const profile: Profile = {
     url: "https://mark-lumba.netlify.app",
     period: "",
     position: "",
-    imageSrc: "",
+    imageSrc: pv2,
     tags: ["React", "HTML", "CSS", "Tailwind"],
   },
   {
@@ -205,7 +208,7 @@ const profile: Profile = {
     url: "https://shoreagents-demo.netlify.app",
     period: "",
     position: "",
-    imageSrc: "",
+    imageSrc: shoreAgents,
     tags: ["React", "HTML", "CSS", "Tailwind"],
   },
   {
@@ -215,7 +218,7 @@ const profile: Profile = {
     url: "https://dotty-app.netlify.app",
     period: "",
     position: "",
-    imageSrc: "",
+    imageSrc: dotty,
     tags: ["React", "HTML", "CSS", "Tailwind"],
   },
   {
@@ -225,7 +228,7 @@ const profile: Profile = {
     url: "https://marklumba.netlify.app",
     period: "",
     position: "",
-    imageSrc: "",
+    imageSrc: pv1,
     tags: ["React", "HTML", "CSS", "Tailwind"],
   }
   ],

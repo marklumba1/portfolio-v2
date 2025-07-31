@@ -32,6 +32,7 @@ const CommonEntryComp: React.FC<CommonEntryComp> = ({
     <div
       onClick={handleParentClick}
       onMouseEnter={() => setCurrentTitle(commonEntry.title)}
+      onMouseLeave={() => setCurrentTitle("")}
       className={`${opacityClass} -ml-5 px-5 py-5 rounded-xl transition-[200ms] flex flex-col lg:flex-row lg:gap-5 gap-3 group hover:cursor-pointer`}
     >
       <div>
@@ -41,7 +42,10 @@ const CommonEntryComp: React.FC<CommonEntryComp> = ({
           </p>
         )}
         {commonEntry.imageSrc && (
-          <img className="h-auto w-50  lg:min-w-40" src={commonEntry.imageSrc} />
+          <img
+            className="h-auto w-50  lg:min-w-40"
+            src={commonEntry.imageSrc}
+          />
         )}
       </div>
       <div className="flex flex-col gap-3">
@@ -58,7 +62,9 @@ const CommonEntryComp: React.FC<CommonEntryComp> = ({
             size={20}
           />
         </a>
-        {commonEntry.summary && <p className="text-sm">{commonEntry.summary}</p>}
+        {commonEntry.summary && (
+          <p className="text-sm">{commonEntry.summary}</p>
+        )}
         {commonEntry.tags && (
           <div className="flex gap-2 flex-wrap">
             {commonEntry.tags?.map((tag) => (
