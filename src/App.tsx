@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import About from "./components/about/About";
 import CommonEntryComp from "./components/entryCard/EntryCard";
 import profile from "./constants";
