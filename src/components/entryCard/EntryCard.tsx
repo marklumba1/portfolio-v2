@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import type { CommonEntry } from "../../constants";
 import { ArrowUpRight } from "lucide-react";
 interface CommonEntryComp {
