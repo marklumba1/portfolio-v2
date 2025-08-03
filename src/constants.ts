@@ -145,7 +145,7 @@ const profile: Profile = {
       position: "Technical-Vocational",
       organization: "Next Generation Technological College",
       period: "2013 - 2014",
-      url: "https://nextgen.edu.ph/"
+      url: "https://www.facebook.com/nextgencollege/"
     },
     {
       title: "Industrial Technology (Computer)",
