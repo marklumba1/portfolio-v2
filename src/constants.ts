@@ -7,6 +7,7 @@ import {
 import projJsonImage from "/proj-json-typecode.jpg"
 import pv1 from "/portfolio-v1.jpg"
 import pv2 from "/portfolio-v2.jpg"
+import weather from "/weather.jpg"
 import shoreAgents from "/shore-agents.jpg"
 import dotty from "/dotty.jpg"
 export interface CommonEntry {
@@ -177,6 +178,16 @@ const profile: Profile = {
   ],
 
   projects: [
+      {
+    title: "Weather Mok App",
+    organization: "",
+    summary: "A responsive weather application built with React, Tailwind CSS, and OpenWeather API. Features search by city, geolocation fallback, and a 5-day forecast. Defaults to Manila when location is unavailable. Deployed via Netlify.",
+    url: "https://weather-mok.netlify.app/",
+    period: "",
+    position: "",
+    imageSrc: weather,
+    tags: ["React", "HTML", "CSS", "Tailwind", "Framer Motion"],
+  },
   {
     title: "Portfolio-v2",
     organization: "",
